@@ -1,0 +1,45 @@
+I want ot keep my set of ec2 instance & want to isolate, High speed internet etc.
+
+There are feature called placemetn group
+
+here, you can deploy your ec2 instances within limit of this placement group.
+
+1. cluster- here, you have a rack/hardware, you can deploy your ec2 instances.
+            You can connect LAN Network to this group which cause good latency/low latency, high bandwidth like 10 gbps.
+
+            If, this placement group is fail, your all ec2 instances will also go dowm or fail at same time.
+    
+2. Spread- here, you can span more than 1 AZ.
+           here, multiple you can make multiple hardware in multiple zones.
+           each hardware, you can deploy max 7 ec2 instances per AZ per Placement group.
+
+           Application: For high availability , isolated from failure from each other placement-group .
+
+           ex. i made 3 diff. placemetnt gorup followed by AZ- 1a, 1b, 1c.
+               i can deplou max 7 ec2 instances in this 3 diff. placement group.
+
+               If any of these AZ is go-down , i will have 2 other Placement group in other AZ.
+               these will reduce risk of failure of your placement gorup.
+
+               NOTE: EC2 instance are on diff. physical hardware.
+
+3. Partition- same like spread, means, you can deploy ec2 instance in diff placement group/rack in diff. region.
+              But, you can devide/partition of this placement group/hardware.\
+              ex. i made placement group in AZ-1a, i can devide it into 2 , 3 partitions.
+              Each partition you can deploy max 7 ec2 instances.
+
+              But, only 100 of ec2 instances you can deploy per region.
+
+              If one partition is fail, so other 2 partition will not affect.
+              only this failed partitions ec2 will failed.
+
+              If AZ-1a, partitions ec2 instances want to get accees/connect to other partitions, this can happens by metadata.
+
+              NOTE: The instances in one partition can not share rack with other instances in other partitions.
+
+              AZ-1a, we devide into 2 partition/rack, rack1, rack2.
+              rack1 instances can not share racks with other partitions ec2.
+
+              Application:  HDFS, HBase, Cassandra, Kalfa. 
+              
+            
