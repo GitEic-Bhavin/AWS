@@ -1,0 +1,89 @@
+Lets, know about ec2 stop, start, terminates
+
+STOP- your ec2s data are stored into EBS volume.
+when you stop & start ec2, your data still available in EBS volume. 
+Bcz, EBS volume is attached over Network.
+
+But, when you terminates ec2, your all data in EBS will be not recoverable. It's Destroyed.
+
+TO RECOVER THIS PROBLEM , HERE, EC2 HYBERNATS WILL WORK.
+
+WHAT'S EC2 HYBERNATS ?
+
+When you go to action- stop- terminates options, there are not option of hybernates.
+
+You have to enable it.
+
+aftet that, select ec2 hybernates.
+
+in the hybernates,
+
+when you stop ec2, whatever last process was run, that process was RESUMED not restart that process agin.
+
+tamari je process run thai hase, te process resume thai jase, jyare tame hybernates karo tyare.
+pachi tame start karo ec2 ne, tyare simple tamari process last run hati te RESUMED mathi j chalu thai jase.
+
+ex, simply tame ec2 ne stop-start karo to tema ec2 status check ma initializing, then, 
+2/1 process pass, 2/2 process pass, OS REBOOT , & it take too much time.
+
+THIS THING IS NOT HAPPENS IN EC2 HYBERNATES.
+
+HYBERNATES, NOT REBOOT OS.
+
+THIS TIME WILL SAVE.
+
+YOUR RESUMED PROCESS( copying files, crontabs live data.. ) ETC WILL BE START FROM RUSEUMED.
+
+IT'S ONLY OVERVIEW.
+
+
+
+                                      WHATS ABOUT CONCEPT?
+
+ON EC2 HYBERNATES
+STOP EC2
+
+EC2 IS STOPPING...
+
+EC2 IS STOPPED..
+
+NOW, EBS MEMORY OF EC2 WILL BE SAVED IN ANOTHER RAM BY THIS HYBERNATS.
+
+YOUR RUNNIG PROCESS CAN NOT BE LOSS.
+
+WHEN YOU START EC2 , THEN THIS RAM WILL BE AVAILABLE IN EBS VOLUME.
+
+SO, YOUR RESUMED PROCESS WILL START FROM RESUMED.
+IT'S NOT REQUIRED LIKE - OS REBOOT, status check - initialization, then system/hardware 2/2 process check passed and then  your ec2 will running well.
+
+it's all not required. this time will save.
+
+your process start from resume.
+
+NOTE:- IF YOU DO NOT USE HYBERNATES, AND YOUR PROCESS IS RUNNING..
+       YOU RESTART EC2- YOUR RUNNING PROCESS WILL NOT BE THERE.
+
+       YOU HAVE TO START THAT PROCESS AGAIN.
+
+       That's It!
+
+       to use hybernates, encrypts EBS Volume first.
+
+SUPPORTED EC2 INSTANCES ?
+C3,C4,C5,I3,M3,M4,R3,R4,T3,T4....
+
+AVAILABLE FOR ON-DEMAND, RESERVED, SPOT INSTANCES.
+
+LIMITATIONS?
+
+YOU CAN NOT HYBERNATES YOUR EC2 FOR MORE THEN 60 DAYS.
+
+
+
+APPLICATION ?
+
+LONG RUN PROCESS.... 
+
+SERVICES THAT TAKE TOO MUCH TIME TO INIALIZING..
+
+SAVING THE RAM STATE.

@@ -1,0 +1,35 @@
+you have a  3 way to create AMI for EC2
+
+1. Launch EC2 instances.
+right click on your ec2.
+go to AMI & Template options.
+select Snapshot.
+
+In AMI sections in EC2 instance console.
+go to AMI sections
+look for a just created AMI. 
+
+2.  if you want to install apache server into your ec2 instances during launching.
+    during creation of the ec2, do all thing like conf., selection of vcp, etc.
+
+    go to last page & find for user data & input code below to install apache server is "httpd"
+
+        # !/bin/bash
+        # Use these for your user data ( script from top to bottom)
+        # install httpd (linux 2 versions ) is apache's web server.
+
+        yum update -y 
+        yum install -y httpd
+        systemctl start httpd
+        systemctl enable httpd
+
+    And, simply launch EC2.
+
+    after start EC2, connect it.
+    go to public ip of these EC2 & enter.
+
+    you will see the web will open with some text.
+
+If you want to automatically install httpd server of apache's when you want to launch EC2 at next time.
+
+make AMI of above
