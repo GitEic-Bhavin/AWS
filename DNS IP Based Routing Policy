@@ -1,0 +1,5 @@
+								DNS IP Based Routing Policy
+				- Route traffic based on IP CIDR Range.
+				-203.0.113.0/24 - This Range of IP traffic will go to EC2 1.
+				-200.5.4.0/24 - This Range of IP traffic will go to EC2 2.
+				-Traffic will distributed based on selected IP Range CIDR Block.

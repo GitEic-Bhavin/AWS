@@ -1,0 +1,68 @@
+								Storage Gateway
+
+Use where Hybrid infrastures like On-premise + AWS Cloud Infrasructure.
+You have Lot of Data like EFS, EBS of IO2, IO1 Class , Data of 1000 PB, 1000 TB.
+
+You want to retrive from cloudFront ( CDN ), Directly from S3.
+It will take too much time for transfer data of PB & TB at once time.
+
+OR Upload this size of data into S3. It will take too much time.
+
+STORAGE GATEWAY will improve transfer speed by Improving Low Latency.
+IT WILL NOT TRANSFER DATA OVER A NETWORK LIKE EDGE LOCATIONS.
+
+		APPLICATIONS						TYPES
+		
+		- Backup during Disaster				S3 File Gateway	Volume Gateway
+		- Caching like Edge Locations.			FSX File Gateway	Tape Gateway
+		
+		
+		
+		
+		
+				S3 File Gateway
+		
+		It transfer file using Std. NFS & SMB Protocol.
+		
+		It Integrated with Active Directory (AD) for USER AUTHENTICATIONS.
+		If user want to access your S3 then user have to authenticate process.
+		without Authenticate user can not be able to access S3.
+		
+	- Create S3 File Storage Gateway & Attach to your On-premise Server.
+	- It will fetch data from your S3 Data center.
+	- THEN, IT SEND TO YOUR AWS STORAGE S3 CLASS- S3 STD, STD-IA, GLACIER, ONE SZON.
+
+Configure s3 to your Storage Gateway to accessible by Gibing IAM Permissions.
+Give Iam Permissions for each Storage Gateway.
+
+
+
+				FSX File Storage Gateway.
+				
+		For Windows File Server like FSX.
+		If you want to expose or share Group File from FSX File System to your On-Promises. You can use FSX File Storage Gateway.
+		
+		
+		
+				Volume Gateway
+				
+	Use when you required backup of entire aws infrastures volume.
+	ex. I have used 100 TB in my entire PC, i want to backup of my entire PC. then i can use Volume gateway as a single click & my entire pc will be backup.
+	
+	Volume gateway will take a snapshot of this entire PC Volume.
+	when required, it will restore this snapshot & extact or like Create a volume from snapshop ( EBS ).
+	
+	
+	
+				Tape Gateway
+				
+				
+				
+				
+				
+			Use Physical Hardware Storage Gateway 	
+			
+			You have to install this physical hardware storage gateway into your Company / on-premises.
+			If you don't have virtualization or not server is available in aws, then you can use this Physical hardware storage gateway.
+					
+		

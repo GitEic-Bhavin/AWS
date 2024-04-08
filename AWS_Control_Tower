@@ -1,0 +1,18 @@
+								AWS Control Tower
+								
+		We learnt about aws organization service.
+		we can manage lot of account in single account for single billing ( Consolidate billing )and applying iam policies to     	accounts and users ( Service control Policy).
+		
+		This is manage by ROOT USER ( AWS Organization's Account ).
+		but, it can not manage lot of account and user at once time.
+		he have to manage 1 by 1 account. means, Create new aws account for new user.
+						   	   Add this user to Particular group.
+						   	   give IAM Permission.
+						   	   if user will retire, then his iam account will not required longer.
+						   	   Remove his account.
+						   	   
+					This all things are can not manage by ROOT USER.
+					We can managed it like lifecycle policeis in s3.
+					we can scheduled for all above things by AWS Control Tower.
+					
+					Means, Je vastu AWS Organization manage kara chhe tene automatic manage kara chhe CONTROL TOWER.

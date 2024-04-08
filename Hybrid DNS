@@ -1,0 +1,7 @@
+							Hybrid DNS
+							
+					To resolving DNS queries between VPC and your network or other DNS Resolver Use HYBRID DNS.
+					
+					Network can be :
+					  - Peered VPC
+					  - On-Premises Network connected through Direct Connecgt or AWS VPN.

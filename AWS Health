@@ -1,0 +1,36 @@
+						   		AWS Health Dashboard
+						   		
+	2 Types   1.. Service History
+		  2.. Your Account
+		  
+		  1.. Service Health
+		  	
+		    - It shows all AWS Services Health, Issues, based on Region.
+		    - Means, Which services are Runnig well and which services are go down/Close/Issues.
+		    - ex. AWS CDN, AWS SMB are not running in this region.
+		    - This is from AWS SIDE.
+		    - AWS ni ketli services band chhe k chalu chhe across region te jova malse.
+		    - suppose, our region is mumbai, mumbai ma ketli services maintanenc ma chhe , te khabet hoy to te services aple use
+		      na karie.   
+		      
+		  2.. Health Dashboard - For YOUR ACCOUNT
+		  
+		     - It will give alert us for any aws services will go under maintenance.
+		     - ex. 20 mar e aws ni ec2 service mumbai region ma band rahese for under maintenance.
+		       to aple apli ec2 service 20 mar pela band kari daisu.
+		     - we can not affect from this aws health event of maintenance if we are already known.
+		     
+		     
+		     
+		     
+	EventBridge for AWS Health Alert
+	
+	- Integrate your future event of AWS Health which will affect your account.
+	- ex. you get notice from aws that ec2 service will be under maintenace from 20 mar.
+	- Today is 6 Mar
+	- Jyare 20 mar avse tya sudhi to tame bhuli jaso k 20 mar e ec2 service nai chale.
+	- 
+	- 20 Mar ave tyare and teni pela tamne notification malse as reminder by using EventBridge.
+	- Integrate AWS Health Dashboard with EventBridge for Auto Reminder at interval.
+	
+	- Eventbridge integrate with Lambda, SNS, SQS, Kinetic Data streams.

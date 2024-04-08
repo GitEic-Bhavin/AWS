@@ -1,0 +1,13 @@
+								AWS Inspector
+								
+	- Scan OS for vulnerabilities							
+	- Analuze UNINTENDED Network Accessibility.
+	
+	For Container Images Push to Amazon ECR
+	- Analyze Conatiner Images for scaning vulnerabilities.
+	
+	
+	 It can analyze your infrastructure for scaning vulnerabilities.
+	 Ex. You have 100 EC2.
+	 Which EC2 security is Breached or your server is breached from where , which EC2 or other services.
+	 It will report you by using EventBridge.

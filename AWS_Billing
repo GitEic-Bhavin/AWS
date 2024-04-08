@@ -1,0 +1,31 @@
+								AWS Billing
+								
+	I'm using ec2, s3, cloudfront, eventbrige, vpc, cloudformation etc.
+	Want to bill for ec2 and s3. means specific aws services only.
+	I will set Threshold for that.
+	I can receive email, massages notification alarm by AWS Billing.
+	
+	
+	
+								AWS Budgets  1. cost data,  2. Usage  3. Saving plan  4. Reservation Budget.
+								
+	I want to bill for overall aws services which i am using in my account. 
+	I will set Threshold and i will receive notifications alert by AWS Budgets. 
+	
+				1. Cost data - Set Budget > Attach IAM Policy of AWSBUDGET > set ACTION during cross Budget.
+							     so, if iam user is cross budget you set then ACTION Will play.
+							     Like, you set action as ec2 will stop if budget 10 will cross by iam user.
+							     or IAM User can not launch more EC2.
+	
+	
+								AWS Cost Explorer
+						
+	To see hourly, weekly, daily, monthly cost of aws services.
+	we can find root cause for which services spends more cost for when ?
+	It will forecast your bill.
+	
+	
+	
+								AWS Compute Optimizer
+								
+				Tells you which services are under provision , out of provision for youe workloads.

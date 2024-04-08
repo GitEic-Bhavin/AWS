@@ -1,0 +1,10 @@
+								CloudHSM
+								
+	Your Secret key, credentials, data all are stored in this HSM.
+	HSM is a hardawar device where you can store your secret data.
+	
+	If anyone tries to access your HSM manuall all data, secret key will be deleted form this devie automatically.
+	
+	You need a cloudHSM Agent to establish a connections into cloudHSM Service.
+	CloudHSM is deployed in VPC, so you can share it across VPCs using VPC.
+	You can accees Key across Multiple Regions.

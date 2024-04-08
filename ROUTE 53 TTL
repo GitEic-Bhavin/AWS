@@ -1,0 +1,38 @@
+								ROUTE 53 TTL
+
+I made a request to google.com from my web browser.
+It will go to local dns server. 
+if local dns server does not cache , it will send to Authorized DNS Server where all records are being kept.
+
+you set a TTL 300s.
+
+agian you made a request, you have not to go to Authorized server, directly fatch to your web server.
+
+				NOW, TTL is COME HERE, YOU SET TTL 300s, means what ?
+				
+				again you make a request - if dns server ip or domain name is modified or replace to another EC2.
+							  - Still you ara able to log in , retrive data from that dns server.
+							  - WHY ?
+							  - Because, you have min. 300 second ( TTL )
+							  - for only 300 second , you can retrive , log in into that server.
+
+
+
+Low TTL , 60 sec > More Request / traffic on your route 53 server > more money you have to spend.
+High TTL, 200 sec > Low Request / traffic on your route 53 server > low money you have to spend.
+
+
+
+
+						ROUTE 53 RECORD ADD YOUR EC2 IP IN VARIABLE A
+						
+					Create Route 53 Record and add your domain name
+					select A AAAA , if want to record IP Instead of your domain name, select A
+					Enter EC2 IP.
+					
+					Create Record.
+					
+					Create Load Balancer & Add this above RECORDS EC2 IP as target group.
+					
+					Check your ROUTE 53 is working well, by dns link, or ,domain name in records.
+					

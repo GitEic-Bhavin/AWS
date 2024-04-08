@@ -1,0 +1,27 @@
+								DNS Routing Policy
+								
+				- DNS Respond to DNS Qurery/Request made by user.
+				1. Simple
+				  - send respond to single resource only.
+				  - we can send multiple respond / multiple domain name , ip to user.
+				  - user will choose one of them & can make request.
+				  
+				2. Weighted
+				  - You have 3 EC2.
+				  - you set weighted 70%, 20%, 10% to EC2.
+				  - DNS will send 70 % traffice to this EC2
+				             send 20 % traffice to second EC2
+				             send 10 % traffice to third EC2
+				             
+				3. Latency
+				  - your ec2 is establish in US, Canada, India, Brazzil.
+				  - you made request from India , Resources in Brazzil.
+				  - Brazzil na najik nu region, AZ ma Tamaru Request DNS send karse.
+				  
+				  
+				  
+				  			    DNS Health record policy
+				  			    
+				 - You have 2 EC2, One is Primary second is optional.
+				 - Replication is continuous.
+				 - if primary EC2 marked unhealthy then dns will send traffic to second EC2.

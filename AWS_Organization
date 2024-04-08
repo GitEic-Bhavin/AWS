@@ -1,0 +1,30 @@
+								AWS ORGANIZATION
+							
+					Use to mangae centrally to All aws account, billing, and IAM Policy.
+					
+	1. AWS Consolidated Billing
+	
+	- Manage all aws account and pay for sum of all aws account services.
+	- do not pay individually for all account, it's difficult.
+	
+	Banifits
+	
+	- One Bill per linked aws account.
+	- Easy to allocate costing & Budgets,
+	- Volume Pricing Discounts,
+	- Benefits while using RESERVED EC2.  Tena mate Organization's na root e Reserved Instance & Saving Plant Enable hovu joie.
+						To j Tame Reserved Instance ne bija accoount ma share kari sako chho.
+	  
+	   - Ex. Account A have 6 On_Demand and using 6 On_Demand & Account B have 6 Reserved but using only 3 Reserved EC2.
+	   -     Reserved EC2 can be shared between accounts.
+	   -     Account B can share non-required 3 EC2 to Account A.
+	   - So, Account A have 3 Reserved + 3 On_Demand. It will cost save.
+	   
+	   
+	   
+	   
+	 2. Service Control Policy 
+	 
+	 - Organization can apply IAM Policy to restrics user for particular services.
+	 - This can be done by Oraganization's Root User ( Management).
+	 

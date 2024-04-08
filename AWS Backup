@@ -1,0 +1,18 @@
+								AWS Backup
+								
+	You have data on EFS, FSX, S3, EBS, DataBase- RDS, DynamoDB etc.
+	Jo tamare EFS nu backup levu hoy to EFS console ma jai ne levu pade.
+	Jo S3 mnu backup levu hoy to S3 Console ma jai ne levu pade.
+	
+	Jo tamare aa badha service na console ma gaya vagar badha Storage Services nu Data Backup levu hoy Centrally one place ma
+	to Use thay AWS Backup Service.
+	
+	AWS Backup will take all Backup from all Storage Services & Keep Backup at one place.
+	It is Centrally manage service.
+	
+	AWS Backup supports Cross-Account Backup & Cross-Region Backup.
+	You can manage by Schedule, Tag Based Backup.
+	
+	
+	
+	After Taking Backup it sends to S3. S3 Valut Lock Class, where your data will be secure by anyone can not delete/modify your data.

@@ -1,0 +1,8 @@
+								KMS Key Deletion Considerations
+								
+		- Schedule CMK for deletion with a waiting period of 7 to 30 days.
+		- during this perios you can cancel "KMS Key Deletions) any time.
+		- You can not use KMS Key for Encryption , Decryption .
+		- Ex. You are using S3 with KMS key during encryption it's fail.
+		- Key Rotation will not worked.
+		

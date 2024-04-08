@@ -1,0 +1,17 @@
+								AWS DataSync
+								
+	Use when you have to move a lot of TB or PB data from aws to on-premis or on-premise to aws any service like EFS, FSX, S3 storage class.
+	
+	Left hand 										Right hand
+	On-Premise										AWS Services
+			You want to transform data from on-premises to AWS Services.
+			
+	Install DataSync
+	Install DataSync Agent
+	Tell Agent to connect SMB, NFS Protocol.
+	Tell DataSync where you want to transfer data in AWS Services like S3 Class, EFS, FSX.
+	
+	DataSync will provide Transfer Speed of 10GB per seconds.
+	
+	DataSync is not running Continuously.
+ NOTE-	It is Scheduled task running hourly, daily etc.

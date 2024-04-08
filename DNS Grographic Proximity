@@ -1,0 +1,6 @@
+							DNS Geographic Proximity
+							
+					Route traffic to your resources based on your users location.
+					we can shift traffic from one to another region by increasing BIAS NUMBER. 
+					If BIAS NUMBER is LESS > Low traffic will attracted.
+					IF BIAS NUMBER is High > More traffic will attracted.

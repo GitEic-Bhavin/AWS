@@ -1,0 +1,12 @@
+								AWS SERVICE CATELOGE
+								
+	ADMIN SIDE		Make templates of list of product you want like cloud template.
+				Template have list of product /aws services.
+				
+				Keep all no. of templates in portfolio.
+				so, create portfolio & put all no. of templetes.
+				
+				give IAM Permissions for which user can access this templetes.
+				
+	USER SIDE		Users can see this list of templets & products.
+				Users can launch this templets.

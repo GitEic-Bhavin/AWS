@@ -1,0 +1,30 @@
+								IAM Security Tools
+
+				1. IAM Access Advisor ( User-Level )
+
+It will shows the Which service permissions granted to a user & When which services was last accessed.
+
+Ex. You granted some services permission to your iam user like EC2, S3, CloudFront, EventBridge, VPC, AWS Billing etc.
+    Your User does not user some Services like AWS Billing, EventBridge etc.
+    You can see this by IAM Access Advisor & Remove this service permissions. so you will save cost on this.
+    
+    
+    
+    
+    				2. IAM Credential Report ( Account Level )
+    				
+The IAM Credentials Report is a comprehensive report available in AWS that provides details about the IAM (Identity and Access Management) credentials within your AWS account. This report includes information such as:
+
+    Access key details: It lists all access keys associated with IAM users in your account, including their status (active or inactive), creation date, and last usage date.
+
+    User details: It provides information about IAM users, such as their username, user ID, and ARN (Amazon Resource Name).
+
+    MFA (Multi-Factor Authentication) status: It indicates whether MFA is enabled for IAM users.
+
+    Password last changed: It shows when IAM user passwords were last changed.
+
+    Access key last rotated: It displays the date when access keys were last rotated for IAM users.
+
+    Access key age: It calculates the age of access keys, helping identify potentially outdated or unused keys.
+
+

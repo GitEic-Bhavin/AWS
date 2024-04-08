@@ -1,0 +1,15 @@
+Analyze your AWS Account and provide recommendation to- 
+							- Cost Optimization
+							- Performance
+							- Security
+							- Fault tolerance
+							- Service limits
+							- Operational Excellence
+							
+		In short, It will analyze your infrastructure and give you advise like
+				- you did not on MFA
+				- Use this Load balancer
+				- use This type of EC2 for 1 year
+				- Make Snapshot for  EBS, EFS, EC2, Cloudfront, Cloutformations etc for Backup.
+				- You did not set coockies.
+				- Use WAF, AWS Shild for DDOS Protections. etc.

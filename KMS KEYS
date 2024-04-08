@@ -1,0 +1,35 @@
+							KMS KEYS
+							
+	Types of KMS Keys
+	1. Assymetric (RSA & ECC key pairs)
+	  - Pulic key - use for Encrypt only.
+	  - Private key - user for Decrypt or sing/verigy opreations.
+	    you have not access use private key.
+	    you hvae to call API, if you want to use private key.
+	    
+	    
+	    
+	 2. Symmetric (AES-256 keys)
+	   - Single encryption  key that is used to Encrypt and Decrypt.
+	   - You can only Decrypt data not encrypt.
+	   - AWS will encrypt data.
+	   - You never get access to the KMS Key unecrypted.
+	   
+	   
+	   
+	   # AWS Owned Keys: use when SSE-S3, SSE-SQS. SSE-DDB type encryption for DynamoDB.
+	   # AWS Managed Key: 
+	   # Customer managed keys: 1$/month - pay for each API Call ($0.003 / 10000 calls)
+	   
+	   
+	   Automatic Key Roatation:
+	     - AWS -managed KMS keys roatating every 1 Year.
+	     - Customer-managed KMS keys ____
+	       YOU HAVE TO ENABLE OPTION FOR AUTOMATIC ROTATION.
+	       ____ Bydefault it is Disabled.
+	       
+	   
+	   
+	   SHARING KMS ENBRYPTED RDS DB SNAPSHOTS
+	   
+	   You can share Encrypted RDS DB with KMS CMS with other accounts by using Key Policy.

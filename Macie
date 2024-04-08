@@ -1,0 +1,7 @@
+							Macie
+							
+			 - Macie uses machine learning algorithms to automatically classify and identify sensitive data within your AWS environment, including data stored in S3 buckets.
+			 - Macie will find a secret key and data in whole aws account.
+			 - If you bymistakly uploaded your credential and secret data you can easily find it using MACIE.
+			 
+			 - once find your credential , Macie will notify by EventBridge to SNS.

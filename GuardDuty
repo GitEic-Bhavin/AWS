@@ -1,0 +1,8 @@
+								GuardDuty
+								
+	- It is Intelligent Threat Discovery to protect your AWS Account.
+	- It is Searching for Threat like Malicious activity in AWS Services like EC2, AWS CloudTrail, VPC Floe Logs.
+	- Detect UnAuthorized Access Attepmpts, Compromised EC2 Instances and credentisals.
+	- GuardDuty can assist in incident response by providing real-time alerts and detailed findings about security threats, allowing security teams to investigate and respond promptly.
+	
+	- If any Threat detected then it will send to EventBridge. EventBridge will send SNS or Lambda.

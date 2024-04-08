@@ -1,0 +1,16 @@
+								ACCESS ANALYZER
+								
+	It finds which resources are sharing externally outside.
+	kaya kaya resources Externally share thaya chhe te joi sakase.
+	
+	jo amuk resources externally share thay to te biju user tene access kari sake chhe which is not trustable and risky for organizations.
+	
+	resources like - S3 , IAM Roles, KMS Keys, Lambda, SQS, Secrets Manager  data.
+	
+	
+	
+	
+	
+	Define ZONE OF TRUST = Define your aws resources  under TRUST ZONE.
+	so, if any resources share outside , other non-trustable user will not access, and you will get notifications.
+	

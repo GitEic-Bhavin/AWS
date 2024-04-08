@@ -1,0 +1,14 @@
+								AWS Logging Method
+								
+				Service Logs for:
+				  - CloudTrail - Trace and record of all requrest activities are happens within our infrastructure.
+				  - Cloudwatch Logs - For full data retentions
+				  - VPC Flow Logs - You can see and trace all traffic are going comming within our VPC, it may have authorized or unauthorized connection, outside of vpc connections etc.
+				  - EBS Access Logs - Trace all request made to your load balancer.
+				  - CloudFront Logs - Full logging of all requests analyzed by the service.
+				  - WAF Logs - Trace all reqhest being made to WAF.
+				  
+				  
+				  
+		ALL ABOVE LOGS ARE SEND TO S3 > AWS Athena
+					       > WE CAN QUICKLY ANALYZE OUR LOGS BY USING Athena.
