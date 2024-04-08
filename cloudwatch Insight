@@ -1,0 +1,20 @@
+								CloudWatch Insight
+								
+	- All Logs are stores in cloudwtch Logs.
+	- You can query like where is "Error- logs" with specifying time, zone etc. with the help of CloudWatch Insight.
+	
+	- It is similar to Athena - Athena use for make query in s3 for lot of logs data.
+	
+	
+	
+	- CloudWatch Insight
+	
+	- you can make query in different AWS Accounts.
+	- Automatic discovers fields from AWS services  events.
+	
+	LIMITATIONS:
+	
+	- It can not query REAL TIME logs.
+	- Only for historical/past logs.
+	
+	- Cloudwatch Insight will analyze your logs and detect unusual activity in your account.

@@ -1,0 +1,36 @@
+								AWS Config\
+								
+		- It will records - what are changes is made within your infrastructure ? 
+				   - Records Configuration changes.
+				   
+				   - Ex. First day you made S3 and attach to Route 53,
+				     Second day you attach Load balancer to Route 53 and Auto scaling.
+				     
+				   - It will records what you are doing within your infrastructure.
+				   
+				   
+				   
+				 
+		- Ex. Security Side.
+		
+		- Track security group rules for load balancer
+		- Track Configuration changes for the load balancer itself to see if anyone modifies the ssl certificate.
+		
+		
+		
+		- If anyone made changes within your infrastructure and configuration rule , It will only give alert not TAKE ACTIONS.
+		
+		
+		
+		- Give Advise that here SSH Port is open . 
+		- If you did not give inbound rule outbound rule it will alert you.
+		
+		- Non Compliatn means tamaru resources ma tenu security rule OK nathi. 
+		
+		
+		
+		- You have enabled AWS Config to monitor Security Groups if there's unrestricted SSH access to any of your EC2 instances. What AWS Config feature you can use to automatically re-configure your Security Groups to the correct state?
+		
+		-  AWS Config Remediations
+
+

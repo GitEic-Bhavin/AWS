@@ -1,0 +1,11 @@
+								Cloud Trail
+								
+		- It will records all events happens within your account with regions level. It keep event data in S3.
+		- It is Bydefault ON.
+		- It will automatically records all events in S3. You do not have use EventBridge to Receive events from source and send to Target.
+		
+		- In EventBridge - we have to peering the necessary Services to EvetnBridge as Source and Target.
+		- While CloudTrail we do not have it.
+		
+		- Ex. If someone delete or adding EC2 -- Who Did it ? While and When and Where did it ? 
+		- All logs are created and put it into S3.

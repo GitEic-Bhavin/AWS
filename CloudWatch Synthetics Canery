@@ -1,0 +1,9 @@
+								CloudWatch Synthetics Canery
+								
+			- It is a script which use for monitoring your website, endpoints, APIs with what are doing your customers within your website like cliking on buttons, submitting forms etc. 
+			- This things you can monitors.
+			
+			If canary detects issues, it will trigger alams like- 
+			EC2 is stopped, terminated - and canary will send to cloudwatch alarm - cloudwatch alarm will invoke Lambda - Lambda will give updates to RDS Route 53 - It will go to load balancer - Load balancer will redirect traffic to new EC2.  
+			
+			- Concept like RDS Infrastructure.

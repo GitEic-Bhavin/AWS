@@ -1,6 +1,6 @@
 I want ot keep my set of ec2 instance & want to isolate, High speed internet etc.
 
-There are feature called placemetn group
+There are feature called placement group
 
 here, you can deploy your ec2 instances within limit of this placement group.
 

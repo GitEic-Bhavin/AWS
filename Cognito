@@ -1,0 +1,16 @@
+								AWS Cognito
+								
+		- AWS Cognito is Temporary Identity provider to user.
+		- This Identity pool allow your user to log in through a trustted third party. It may be Public Provider like Amazon, Facebook, Google, Apple.
+		- It also allow unauthenticated guest users access into AWS by defining guest policy. so we can give aws credentials to guest users.
+		
+		
+		
+		EX. we want to allow user to log in - we can allow user to connect a congnito user pool or third party like Google login, Facebook login, or SAML , openID connect connect for identity provider.
+		
+		- Once user get log in out of these public provider, they will get a token and they will go to talk Congnito Identity pool service for varify his token into congnito pool service.
+		
+		- User get token from Public Provider > Varify this token by Cognito pool service
+		                                      > Once it varify , Cognito will talk to the STS service to get temporary Credentials.
+		                                      
+		- By this credentials they will able to talk and connect to our aws services.

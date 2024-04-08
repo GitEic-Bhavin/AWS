@@ -1,0 +1,16 @@
+								Congnito User pool and Cognito Identity pool
+								
+								
+								
+			- for authentication ( identity verifications )
+			- Allows to log in through public social,  SAML etc
+			- MFA, adaptive authentications etc.
+			
+			
+			
+Cognito Identity pools ( for auhorization = access conrol )
+TO access aws database, s3 then use cognito identity pools bxz, it use aws services and required authorizations.
+
+- Temporary AWS Credentials for users to login through public social, SAML & Cognito User Pools.
+
+- Users can be Guest/Unauthenticated.

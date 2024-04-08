@@ -1,0 +1,10 @@
+								ElastiCache Replication for Memcached
+								
+			- Memcached Clusters can have 1-4- nodes.
+			
+		
+	Horizontal Scaling - Add/remove nodes from the cluster.
+	Vertical Scaling - By Larger/smaller node type.
+			  - Scale up process : - create a new cluster with the new node type.
+			  - Update your applications to use the new clusters endpoints
+			  - Delete the old cluster.					

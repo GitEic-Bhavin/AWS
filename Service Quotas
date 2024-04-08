@@ -1,0 +1,12 @@
+								Service Quotas
+								
+								- AWS Service Quotas is a service that allows you to view and manage quotas (also known as limits) for AWS services in your AWS account.
+								
+								-Quotas define the maximum resources or operations that you can use or perform within a specific AWS service.
+								
+								- It gives you a limit for resources.
+								Ex. You can create 5 s3 per region.  You can launch 10 EC2 in your account.
+								
+								- jyare tame 6 k 7 ec2 create karya tyare SERVICE QUOTAS tamne notify karse k tame  7 out of 10 EC2 create karya chhe. To tamari pase 3 EC2 Instance rahya chhe. 10 thi vadhare tame luanch nai kari sako.
+								
+								- It's like Previledges gives to users for Service.

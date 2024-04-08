@@ -1,0 +1,29 @@
+									RDS Aurora
+									
+			- It will manage and take care of my all RDS Database.
+			- It will take care like RDS Instances Types, Instance creation, snapshot taken, RDS DB Auto scaling,
+			                         High Availability, Multi zone Replication etc.
+			                         
+			- We have to only instruct that use this template and it will make Instances and all other things take care.
+			
+			
+			
+			Features of Aurora
+			
+		- Automatic fail-over
+		- Backup and Recovery
+		- Isolation and security
+		- Industry compliance
+		- Push-button scaling
+		- Automated patching with zero downtime
+		- Advanced monitoring
+		- Routine Maintenance
+		- Backtrack: Restore data at any point of time without using backups.
+		
+		
+		MAX. 15 Read Replica can created by Aurora. It is connected to all 15 Read replica with Auto-Scaling.
+		This all Read replica is connected to load balancer
+		All Primary DB is connected to load balancer.
+		
+		
+		

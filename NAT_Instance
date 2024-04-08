@@ -1,0 +1,19 @@
+								NAT Instance
+								
+		- NAT Instance is use to Private Instance can access Internet withou attaching NAT GATEWAY.
+		- Create NAT Instance form community
+		- Choose Public subnet for NAT INSTANCE.
+		
+		- Security Group for NAT Gateway.
+		    - SSH, HTTP, ICMP
+		    
+		- Security Group for Private Instance.
+		    - SSH, HTTP
+		    
+		- Route Table for NAT Gateway
+		    - SSH HTTP ICMP
+		    
+		- Route Table for Private Instance.
+		    - SSH, 0.0.0.0./. > Nat Gateway.
+		    
+		- Noq, Ping from Private Instance.

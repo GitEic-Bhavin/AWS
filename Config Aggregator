@@ -1,0 +1,13 @@
+								Config Aggregator
+
+		- In AWS config - It is show which resources are compliant or not compliant ( means tame ok rule apya chhe tamara resources ne ex. security group rule etc )
+		
+		- This is for 1 AWS Account.
+		
+		- You have to manage 100 AWS Accounts for configuration of resources in all 100 accounts.
+		
+		- You want to see how many resources has complinat or non complinat across 100 account.
+		
+		- Use Config Aggregator - You can give security rules if non compliant resources in 100 accounts.
+		
+		- Config Aggregator is a one central account where you can see and manage configure the resources.

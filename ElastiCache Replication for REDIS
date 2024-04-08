@@ -1,0 +1,51 @@
+								ElastiCache Replication for REDIS
+
+
+
+				1. ElastiCache Replication: Cluster mode Disable
+
+				- There is 1 Primary CACHE original Node
+				- we can set upto 5 Cache Replica nodes.
+				- If Primary Cache node is failed, automatically It will replaced by Replica Nodes.
+				
+				- Primaary node - Write Ops.
+				- Other node - Read Ops.
+				
+				- Multi-AZ enabled bydefault for failover.
+				
+				
+			- REDIS SCALING
+			
+			- Horizontal Scaling - By adding/remve read replicas max. 5 replicas.
+			
+			- Vertical Scaling - By Changing Node type smaller to larger. Like Change Instance type.
+			
+			
+			
+				2. ElastiCache Replication: Cluster Mode Enabled
+				
+				- Data is partitioned/divided. - It Helps to scale writes.
+				- Each Partitions has a PRIMARY NODE AND UPTO 5 REPLICA NODES.
+				- Multi-AZ Capability.
+				
+				
+				- Auto-Scaling Supported.
+				
+				
+				
+				
+				
+				
+				
+		- Redis Metrics to Monitor
+		 
+		1. Evictions: No. of non-expired items the cache evicted to allow fpace for new writes.
+		
+		Solutions - Choose an eviction policy to evict expired items.
+                          - Scale up to larger node type for more memory or scale out by adding more nodes.
+                          
+                2. CPUUtilization: Solutions - Scale upt o larger node type or scale out by adding more nodes.
+                
+                3. CurrConnections: No. of concurrent and active connections.
+                
+                4. DatabaseMemoryUsagePercentage: Thepercentage of memory utiliztions

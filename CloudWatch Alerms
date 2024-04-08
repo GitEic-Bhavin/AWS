@@ -1,0 +1,36 @@
+CloudWatch Alarm
+
+
+
+Types of Alarm States:
+
+1. OK - That is not triggered.
+2. INSUFFICIENT_DATA - There is not enough data for tha alarm to  determine a state.
+3. ALARM - Your threshold has been breached. therefor notification will be sent.
+
+PERIOD:
+
+ How long you want the alarm to evaluate for on the metric.
+ 
+ 
+ 
+ 
+ ALARM HAS 3 MAIN TARGETS. 1. Action on instances like stop, terminate, reboot etc.
+ 			    2. Trigger Auto Scaling Actions.
+ 			    
+ 			    3. Send notification on SNS.
+ 			    
+ 		Hands on
+ 		
+ 		Go to cloudwatch > alarm > create alarm > select metric (EC2) > click on choose metric > set threshold > SNS topic.
+ 			    
+ 			    
+ 			    
+ 			    
+ 			    
+ 			    
+ 			    COMPOSITE ALARM
+ 			    
+		- You can Combine all Alarm in One place and you can manage and watch alarm.
+		- you can manage it by AND OR conditions.
+		- When Condition meets then composite alarm wil triggered.

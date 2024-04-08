@@ -1,0 +1,41 @@
+								RDS PROXY
+								
+								
+								
+		- RDO PROXY is a middle man between you and RDS Instances.
+		- RDS Instances such as MySQL, PostGres.
+		- You can directly connect to RDS Instances endpoint and ahithi tame updates , queries operations kari sako chho..
+		
+		- Connect you with RDS Proxy (Middleman) > RDS Proxy will responsible for managing the connections to your database.
+		
+		RDS Proxy can handles all network traffic including :- Establish, Maintaining & Terminatting Connections.
+		
+		
+		
+		
+		
+		EXPLAINATION
+		
+		- Your App is send request to your RDS DB.
+		- Proxy will Store Existing and new connections in Connections Pool.
+		- Next time if same request is made by user, then it will not going to RDS Instance direclty. It will fatch from Proxy.
+
+		- IT IS WORK AS MIDDLE LAYER LIKE STORAGE GATEWAY IN CDN.
+		
+		- So, Lot of request will handles from RDS Proxy & thatsfor Lod in RDS DB and RDS Instance will be maintained.
+		
+		- RDS PROXY IS MANAGED SERVICE - AUTO-SCALING, REQUEST TRANSFERRING ETC.
+		
+		- You can set % of connections pool max. conncetions.
+		- Ex. You set 80 % max. conncetions.
+		- If you reach 80% Max. connections then Next new connections will be rejected by RDS Proxy.
+		
+		
+		
+		
+		As your traffic grows, you start getting TooManyConnections errors from your PostgreSQL RDS DB instance. What's the best way to resolve this error?
+		
+		RDS Proxy: handles cleaning up idle connections and managing connection pools, instead of manually handle it in your Lambda functions and at the RDS database side.
+
+
+		

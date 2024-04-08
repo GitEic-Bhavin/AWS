@@ -1,0 +1,22 @@
+								RDS Events
+				
+				RDS will keep a record of events based on :
+				- DB Instances, Snapshots, Parameter Group, Security Group.
+				
+				- Ex. DB State changed from Pending to Running. That is event.
+				
+				- We have to turn on - RDS Event Subsriptions.
+				- We can get alert using SNS.
+				- You can also do that, Set up rules for get event to EventBridge.
+				
+				
+				
+		RDS Database Log Files
+		
+		DB Instance have some logs > It will send to cloudwatch logs > You can filter it.
+		
+		also you can set Cloudwatch Alerm for specific logs ara more happenig.
+		It should be inform to admin by Cloudwatch Alerm > SNS
+		
+		
+	TO SEND ALL LOGS IN CLOUDWATCH > ENABLE ENHANCE MONITORING.

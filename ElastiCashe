@@ -1,0 +1,24 @@
+								ElastiCache
+								
+				- Store the Temporory data into cashing engine.
+				- New request is send to database and retrive data and send back to user.
+				- This data will store into Cashing Engine.
+				- If same request made by user - this time request will go to cashing engine and will give respond.
+				- This will improve overall performance, bcz, Cashing engines aerr generally in-memory & 
+				  thery are externaly fast.
+				  
+				- REDIS & Memcached
+				
+		- REDIS
+		- It is Multi AZ with Auto-Failover.
+		- It have Read Replicas to scale reads and have hig a ailability.
+		- Backup and restore feratures.
+		- No high availability for replications.
+		- No backup and restores features.
+		
+		
+		
+		- Memcached
+		- Multi-node for partitioning of data.
+				
+
